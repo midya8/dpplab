@@ -1,6 +1,8 @@
-# Exact finite L-ensemble contract
+# DPPLab finite L-ensemble method
 
-## Established method
+Given a real-symmetric likelihood kernel L, DPPLab computes every subset weight and checks the resulting inclusion law. Include/exclude conditions and optional fixed total size select different laws; the residual kernel below represents only the include/exclude condition.
+
+## L-ensemble law
 
 A real symmetric positive-semidefinite matrix L indexed by n items defines an L-ensemble:
 
