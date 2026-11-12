@@ -1,10 +1,10 @@
 # DPPLab
 
-Exact finite determinantal point processes with every subset and conditional fraction exposed. Dependency-free Python, independent BigInt JavaScript, no model or API call.
+DPPLab computes the complete subset distribution for a supplied determinantal point process (DPP) likelihood kernel. Inspect every determinant weight, inclusion probability and conditional fraction using exact arithmetic in Python and independent BigInt JavaScript. Neither implementation calls a model or API.
 
 [Live inspector](https://midya8.github.io/dpplab/) · [Method, sources and limits](METHOD.md)
 
-## What it does
+## What you can inspect
 
 - Checks symmetric positive-semidefinite likelihood kernels by every exact principal minor. Valid singular kernels stay singular.
 - Enumerates every subset with determinant weight and exact-set probability; compares every inclusion determinant against a separate atomic-probability sum.
@@ -14,6 +14,8 @@ Exact finite determinantal point processes with every subset and conditional fra
 - Retains every exact MAP tie, all selected item marginals, complete cardinality laws and JSON export.
 
 The default control has two identical items. Each has inclusion probability 4/9, but their joint inclusion probability is zero, versus 16/81 from an independent equal-marginal control. A third independent item has inclusion probability 1/2. Supplied geometry, not measured semantic diversity.
+
+There are three related distributions: the original L-ensemble, its include/exclude conditional law, and an optional fixed-total-size selection. The fixed-size law comes from enumeration, not from treating its marginals as an ordinary DPP kernel. [METHOD.md](METHOD.md) defines the distinction.
 
 ## Run
 
